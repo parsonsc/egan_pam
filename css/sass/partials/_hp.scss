@@ -1,0 +1,122 @@
+.homepage .slideshow {
+	height: 300px;
+}
+.homepage section {
+	background-color: $light_blue_bg;
+	border-top: 1px solid $border;
+  	border-bottom: 1px solid $border;
+  	padding-top: 94px;
+  	padding-bottom: 66px;
+  	margin-bottom: 0px;  
+}
+.homepage .hp_about {
+		
+  	
+}
+.homepage .hp_about article {
+	width: 55%;
+	float: left;
+}
+.homepage .hp_about img {
+	width: 35%;
+	float: right;
+}
+
+// HP SERTVICES
+
+.homepage .hp_services {
+	// background: url(../images/hp/services.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.homepage .hp_services .service_grid {
+	width: 100%;
+}
+.homepage .hp_services .service_grid article {
+	text-align: center;
+	padding: 35px 1%;
+	display: block;
+	float: left;
+	width: 23%;
+}
+.homepage .hp_services .service_grid article i {
+	font-size: 36px;
+	color: $heading_grey;
+	margin-bottom: 10px;
+}
+
+// HP NEWS
+.homepage .hp_news .news_grid {
+	padding: 35px 0;
+}
+.homepage .hp_news .news_grid article {
+	width: 31%;
+	display: block;
+	float: left;
+	margin: 1%;
+}
+.homepage .hp_news .news_grid article img {
+	float: left;
+	margin-right: 5%;
+}
+
+// HP BG 
+.homepage .hp_bg {
+	padding: 250px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.homepage .hp_bg.bg_01 {
+	background: url(../images/hp/services.jpg);
+}
+.homepage .hp_bg.bg_02 {
+	background: url(../images/hp/contact.jpg);
+}
+// HP CASE STUDIES
+
+ul#filter { 
+  float: left; 
+  font-size: 16px; 
+  list-style: none; 
+  margin: 20px 0; 
+  width: 100%;
+}
+
+ul#filter li { 
+  border-right: 1px solid #dedede;
+  float: left;
+  line-height: 16px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+ul#filter li:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+ul#filter a { color: #999; text-decoration: none; }
+
+ul#filter li.current a, ul#filter a:hover { text-decoration: underline; }
+ul#filter li.current a { color: #333; font-weight: bold; }
+
+ul#portfolio { 
+  float: left; 
+  list-style: none; 
+  margin-left: 0; 
+  width: 100%;
+}
+ul#portfolio li { 
+  float: left; 
+  margin: 0 10px 10px 0; 
+  padding: 5px;
+  width: 31%;
+}
+
+ul#portfolio a { display: block; width: 100%; }
+ul#portfolio a:hover { text-decoration: none; }
+ul#portfolio img {  display: block; width: 100%;}
+
+
+// CONTACT
+
+.homepage .hp_contact {
+	// background: url(../images/hp/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
