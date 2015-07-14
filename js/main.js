@@ -13,13 +13,16 @@ $(function() {
 });
 // END STICKY HEADER
 
-
-$(document).ready(function(){
-	$(".mobile_button").click(function(){
-		$("nav.site_nav ul").slideToggle();
-
-	}); 
-});
+// MOBILE MENU HAMBURGER
+  var hamburger = $('#menu-icon');
+  hamburger.click(function() {
+      hamburger.toggleClass('active');
+      return false;
+  });
+  $("#menu-icon").click(function(){
+      $("header.site_header nav").slideToggle();
+  });
+// END HAMBURGER
 
 // SMOOTH SCROLL ANCHOR
 $(function() {

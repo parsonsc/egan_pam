@@ -37,11 +37,11 @@
 	padding: 35px 1%;
 	display: block;
 	float: left;
-	width: 23%;
+	width: 18%;
 }
 .homepage .hp_services .service_grid article i {
 	font-size: 36px;
-	color: $heading_grey;
+	color: $al_blue;
 	margin-bottom: 10px;
 }
 
@@ -81,16 +81,18 @@ ul#filter {
   float: left; 
   font-size: 16px; 
   list-style: none; 
-  margin: 20px 0; 
+  margin: 20px 0;
+  padding: 5px 0; 
   width: 100%;
+  border-top: 1px solid $border;
+  border-bottom: double 3px $border;
 }
 
 ul#filter li { 
-  border-right: 1px solid #dedede;
   float: left;
   line-height: 16px;
-  margin-right: 10px;
-  padding-right: 10px;
+  margin-right: 15px;
+  padding-right: 15px;
 }
 ul#filter li:last-child { border-right: none; margin-right: 0; padding-right: 0; }
 ul#filter a { color: #999; text-decoration: none; }
@@ -117,9 +119,105 @@ ul#portfolio img {  display: block; width: 100%;}
 
 
 // CONTACT
-
 .homepage .hp_contact {
 	// background: url(../images/hp/contact.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.homepage .hp_contact article {
+	width: 46%;
+	padding: 2%;
+	float: left;
+	display: block;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	.homepage section {
+	  	padding-top: 55px;
+	}
+	.homepage .slideshow {
+		height: 150px;
+	}
+	.homepage .hp_about article {
+		width: 100%;
+		float: none;
+		margin: 0 0 20px;
+	}
+	.homepage .hp_about img {
+		width: 100%;
+		float: none;
+	}
+
+	// HP SERTVICES
+	.homepage .hp_services .service_grid article {
+		text-align: center;
+		padding: 35px 0;
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.homepage .hp_services .service_grid article i {
+		font-size: 36px;
+		color: $al_blue;
+		margin-bottom: 10px;
+	}
+
+	// HP NEWS
+	.homepage .hp_news .news_grid {
+		padding: 35px 0;
+	}
+	.homepage .hp_news .news_grid article {
+		width: 31%;
+		display: block;
+		float: left;
+		margin: 1%;
+	}
+	.homepage .hp_news .news_grid article img {
+		float: left;
+		margin-right: 5%;
+	}
+
+	// HP BG 
+	.homepage .hp_bg {
+		padding: 18% 0;
+		background-size: 100%!important;
+	}
+
+	// HP CASE STUDIES
+	ul#filter {  
+	  font-size: 14px; 
+	  margin: 20px 0; 
+	  width: 100%;
+	}
+
+	ul#portfolio li { 
+		margin: 0 2% 10px 0;
+		padding: 1%;
+		width: 46%;
+	}
+	// HP NEWS
+	.homepage .hp_news .news_grid {
+		padding: 20px 0;
+	}
+	.homepage .hp_news .news_grid article {
+		width: 48%;
+	}
+	.homepage .hp_news .news_grid article img {
+	  float: none;
+	  margin-right: 0;
+	}
+
+	// CONTACT
+	.homepage .hp_contact article {
+		width: 100%;
+		padding: 2% 0;
+		float: none;
+	}
+
 }

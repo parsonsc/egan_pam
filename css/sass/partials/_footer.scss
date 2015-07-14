@@ -7,3 +7,23 @@ footer.site_footer {
 	width: 100%;
 	font-size: 12px;
 }
+.backTop {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background: $white;
+	border-radius: 5px;
+}
+.backTop a {
+	color: border;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+}

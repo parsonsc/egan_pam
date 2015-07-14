@@ -19,27 +19,48 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="site_container">
+        <div class="site_container" id="#siteContainer">
             <header class="site_header">
                 <div class="inner_content">
-                    <a href="#" class="logo"><img src="http://placehold.it/120x75" alt=""></a>
-
+                    <a href="index.html" class="logo"><img src="images/logo.jpg" alt=""></a>
+                    <!-- mobile menu icon -->
+                    <a id="menu-icon" href="#" title="Menu" class="show_mobile">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </a>
                     <nav class="site_nav">
+
                         <ul>
-                            <li>
-                                <a href="#hpAbout">lorem Ip </a>
+                            <li class="active">
+                                <a href="#hpAbout">About</a>
                             </li>
                             <li>
-                                <a href="#hpServices">lorem</a>
+                                <a href="#hpServices">Services <i class="fa fa-chevron-down"></i></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <a href="#hpNews">news</a>
                             </li>
                             <li>
-                                <a href="#">lorem</a>
-                            </li>
-                            <li>
-                                <a href="#hpNews">lorem</a>
-                            </li>
-                            <li>
-                                <a href="#hpContact">lorem</a>
+                                <a href="#hpContact">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,7 +70,14 @@
 
             <div class="main_content homepage">
                 <section class="slideshow" id="slideshow">
-                    sds
+                    <ul class="bxslider">
+                              <li>
+                                
+                              </li>
+                              <li>
+                                
+                              </li>                              
+                            </ul>   
                 </section>
                 <section class="hp_about os-animation" data-os-animation="fadeIn" id="hpAbout">
                     <div class="inner_content">
@@ -68,40 +96,47 @@
                     
                 </div>
 
-                <section class="hp_services os-animation" data-os-animation="fadeIn" id="hpServices">                  
-                    <header>
-                        <div class="inner_content">
+                <section class="hp_services os-animation" data-os-animation="fadeIn" id="hpServices">  
+                    <div class="inner_content">        
+                        <header>                        
                             <h2>Services</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda in deserunt sint minus culpa sunt vero officia repellendus velit mollitia, quo natus cumque quod debitis odit. Maxime repellendus nulla.</p>
-                        </div>
-                    </header>
+                        </header>
+                    </div>
 
                     <div class="service_grid">
-                        <article>
+                        <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.25s">
                             <i class="fa fa-home"></i>
                             <h3>lorem</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo consectetur id consequatur nobis. Numquam, rerum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo.</p>
                             <a href="#" class="site_cta">View more</a>
                         </article>
 
-                        <article>
+                        <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
                             <i class="fa fa-home"></i>
                             <h3>lorem</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo consectetur id consequatur nobis. Numquam, rerum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo.</p>
                             <a href="#" class="site_cta">View more</a>
                         </article>
 
-                        <article>
+                        <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.75s">
                             <i class="fa fa-home"></i>
                             <h3>lorem</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo consectetur id consequatur nobis. Numquam, rerum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo.</p>
                             <a href="#" class="site_cta">View more</a>
                         </article>
 
-                        <article>
+                        <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="1s">
                             <i class="fa fa-home"></i>
                             <h3>lorem</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo consectetur id consequatur nobis. Numquam, rerum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo.</p>
+                            <a href="#" class="site_cta">View more</a>
+                        </article>
+
+                        <article class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="1.25s">
+                            <i class="fa fa-home"></i>
+                            <h3>lorem</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita error eveniet nam sit temporibus totam beatae, sapiente rerum, voluptatibus, asperiores possimus doloremque architecto explicabo.</p>
                             <a href="#" class="site_cta">View more</a>
                         </article>
                     </div>
@@ -128,25 +163,24 @@
                               <li><a href="#">CMS</a></li>
                             </ul>
 
-
                             <ul id="portfolio">
                                 <li class="cms integration">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                                 <li class="integration design">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                                 <li class="design development">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                                  <li class="cms integration">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                                 <li class="integration design">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                                 <li class="design development">
-                                    <a href="#"><img src="http://placehold.it/300x250" alt="" height="115" width="200" /></a>
+                                    <a href="#"><img src="http://placehold.it/300x250" alt=""/></a>
                                 </li>
                               
                             </ul>
@@ -218,29 +252,83 @@
 
                 <section class="hp_contact os-animation" data-os-animation="fadeIn" id="hpContact">
                     <div class="inner_content">
+                        <article class="contact_block">
+                            <h2>Contact us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iste vel nemo laudantium aperiam sit provident, odit quas.</p>
+                            <form action="">
+                                <div class="form_item">
+                                    <label for="">
+                                        
+                                        <input type="text" placeholder="Name*">
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <label for="">
+                                        
+                                        <input type="email" placeholder="Email*">
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <label for="">
+                                        
+                                        <input type="tel" placeholder="Number*">
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <label for="">
+                                        
+                                        <input type="text" placeholder="Subject">
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <label for="">
 
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Message">
+                                            
+
+                                        </textarea>
+                                    </label>
+                                </div>
+
+                                <div class="form_item">
+                                  <label for="">
+                                      <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                                  </label>  
+                                </div>
+                            </form>
+                        </article>
+                        <article class="contact_block">
+                            <h2>Meet the team</h2>      
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, a iste placeat beatae consequatur, debitis velit culpa fuga quos quis doloremque repellendus laboriosam amet voluptatibus distinctio sit aperiam illum omnis.</p>  
+                            <a href="#" class="site_cta">Meet the team</a>               
+                        </article>
+                    </div>  
+
+                    <div class="map">
+                       <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0782223882406!2d-0.14640499999999948!3d51.5117809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876052b85cd3083%3A0xdd9a05ed698fc0b4!2sEgan+Property+Asset+Management+Ltd!5e0!3m2!1sen!2suk!4v1436875591517" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                     </div>
+                    
                 </section>
                 
 
                 <footer class="site_footer">
                     <div class="inner_content">
                         <p>Copyright 2015 Albemarle | All Rights Reserved</p>
+                        <a href="#siteContainer" class="backTop os-animation" data-os-animation="fadeIn"><i class="fa fa-chevron-up"></i></a>
                     </div>
                 </footer>
             </div>                
         </div>      
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-         
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>         
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script> 
         <script src="js/main.js"></script>  
         <script>
-            $(document).ready(function(){
-                $('.bxslider').bxSlider();  
-                 
+          $('.bxslider').bxSlider({
+              auto: true,
+              pager: false,
+              controls: false
             });
         </script>    
     </body>

@@ -68,7 +68,7 @@ h2 {
 	overflow: hidden;
 	min-height: 100%;
 	font-size: 14px;
-	padding-bottom: 342px;
+	padding-bottom: 80px;
 	color: $font_grey;
 }
 .inner_content {
@@ -89,7 +89,7 @@ h2 {
     opacity: 1;
 }
 .main_content {
-	margin-top: 100px;
+	margin-top: 86px;
 }
 .site_container section {
 	padding: 35px 0;
@@ -99,6 +99,8 @@ h2 {
 }
 .site_container section header {
 	text-align: center;
+	width: 60%;
+	margin: 0 auto;
 }
 
 
@@ -107,4 +109,41 @@ a.site_cta {
 	border: 1px solid $font_grey;
   	border-radius: 5px;
   	padding: 10px 15px;
+  	display: inline-block;
+  	@include transition(all 0.3s ease-in-out);
+}
+a.site_cta:hover {
+	background: $al_blue;
+	border: 1px solid $white;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+	.inner_content {
+		min-width: 96%;
+		max-width: 96%;
+		margin: 0 auto;
+	}
+	.site_container section header {
+		width: 90%;
+	}
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	.inner_content {
+		min-width: 96%;
+		max-width: 96%;
+		margin: 0 auto;
+	}
+	.main_content {
+	  margin-top: 0;
+	}
+
+	.site_container section {
+		padding: 20px 0;
+	}
+	.site_container section header {
+		width: 90%;
+	}
 }

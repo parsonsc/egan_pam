@@ -1,7 +1,6 @@
 header.site_header {
 	position: fixed;
 	width: 100%;
-	overflow: hidden;
 	top: 0;
 	left: 0;
 	padding: 5px 0;
@@ -16,7 +15,6 @@ header.site_header a.logo {
 	@include transition-duration(.8s);
 }
 header.site_header nav {
-	overflow: hidden;
 	float: right;
 }
 header.site_header nav ul {
@@ -28,19 +26,126 @@ header.site_header nav ul li {
 	padding: 0 20px;
 	text-align: center;
 	text-transform: uppercase;
+	position: relative;
 }
 header.site_header nav ul li a {
 	display: block;
 	padding: 30px 0;
 	color: $font_grey;
-	@include transition-duration(.8s);
+	@include transition(all 0.3s ease-in-out);
 }
-
+header.site_header nav ul li.active a,
+header.site_header nav ul li a:hover {
+	color: $al_blue;
+}
 header.site_header.sticky a.logo { 
 	width: 100px;	
 } 
 header.site_header.sticky nav ul li a {
 	padding: 24px 0;
 }
-
+header.site_header nav ul li ul {
+	position: absolute;
+	background: $white;
+	top: 68px;
+	left: 0;
+	display: none;
+	@include transition(all 0.3s ease-in-out);
+}
+header.site_header nav ul li ul li {
+	float: none;
+	text-align: left;
+}
+header.site_header nav ul li i {
+	font-weight: 300;
+}
+header.site_header nav ul li ul li a {
+	padding: 10px 0;
+}
+header.site_header nav ul li:hover ul {
+	display: block;
+}
 // @include opacity(0.7);
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	header.site_header {
+		position: relative;
+		z-index: 999;
+		overflow: hidden;
+	}
+	header.site_header a.logo {
+		width: 40%;
+	}
+
+	header.site_header nav {
+		float: none;
+		clear: both;
+		width: 100%;
+		display: none;
+	}
+
+	header.site_header nav ul li {
+		display: block;
+		float: none;
+		padding: 0;
+	}
+	header.site_header nav ul li a {
+		padding: 15px 0;
+	}
+	header.site_header a.logo { 
+		width: 40%;	
+	} 
+	header.site_header nav ul li a {
+		padding: 15px 0;
+	}
+	header.site_header nav ul li ul {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	header.site_header nav ul li:active ul {
+		display: block;
+	}
+
+	#menu-icon {
+    width:30px;
+    height:20px;
+    position:relative;
+    display:block;
+    float:right;
+    margin-top:5px
+  }
+  #menu-icon .line {
+    display:block;
+    background:$al_blue;
+    width:30px;
+    height:5px;
+    position:absolute;
+    left:0;
+    transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s
+  }
+  /*HAMBURGER LINES*/
+  #menu-icon .line.line-1 {top:0;}
+  #menu-icon .line.line-2 {top:50%;}
+  #menu-icon .line.line-3 {top:100%;}
+  #menu-icon.active .line-1 {
+    transform:translateY(10px) translateX(0) rotate(45deg);
+    -webkit-transform:translateY(10px) translateX(0) rotate(45deg);
+    -moz-transform:translateY(10px) translateX(0) rotate(45deg);
+  }
+  #menu-icon.active .line-2 {opacity:0}
+  #menu-icon.active .line-3 {
+    transform:translateY(-10px) translateX(0) rotate(-45deg);
+    -webkit-transform:translateY(-10px) translateX(0) rotate(-45deg);
+    -moz-transform:translateY(-10px) translateX(0) rotate(-45deg)
+  }
+}

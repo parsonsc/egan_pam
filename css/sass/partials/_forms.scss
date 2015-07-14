@@ -1,0 +1,43 @@
+form {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+form .form_item  {
+	width: 100%;
+}
+form .form_item input,
+form .form_item select,
+form .form_item textarea {
+	border: 1px solid #636372;
+  	background: rgba(255,255,255,0.01);
+  	margin: 3px 0 3px 0;
+  	outline: 0;
+  	width: 96%;
+  	padding: 10px 2% 11px;
+  	line-height: 20px;
+}
+form .form_item input:active {
+	outline: 0;
+}
+form .form_item button {
+	width: 100%;
+	padding: 10px 2% 11px;
+  	line-height: 20px;
+  	outline: 0;
+  	background: $al_blue;
+  	color: $white;
+  	border: 1px solid #636372;
+  	border-radius: 5px;
+  	margin-top: 20px;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+ 
+}
