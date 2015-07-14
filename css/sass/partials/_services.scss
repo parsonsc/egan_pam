@@ -41,6 +41,21 @@
 
 // MOBILE SYLES
 @include respond-to(mobile) {
+	.services section article {
+		width: 100%;
+		margin-right: 0%;
+	}
+	.services section img {
+		width: 100%;
+	}
 
+	.services section.right article {
+		width: 100%;
+		margin-left: 0;
+	}
+	.services section.right img {
+		width: 100%;
+
+	}
  
 }

@@ -1,0 +1,39 @@
+.staff header {
+	padding: 35px 0;
+}
+.staff_members ul li {
+	display: block;
+	float: left;
+	width: 31%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+
+.staff_details img {
+	width: 49%;
+	display: block;
+	float: left;
+}
+.staff_details article {
+	width: 49%;
+	display: block;
+	float: right;
+}
+.staff_details article ul.contact_details {
+	border-top: 1px solid $border;
+}
+.staff_details article ul.contact_details li {
+	display: block;
+	padding: 10px 0;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+ 
+}
