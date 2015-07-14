@@ -1,0 +1,32 @@
+.news_grid {
+	border-top: 1px solid $border;
+}
+.news_grid li {
+	display: block;	
+	border-bottom: 1px solid $border; 
+	margin: 20px 0;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.news_grid li a {
+	color: #4a4a4a;
+}
+.news_grid li img {
+	float: left;
+	display: block;
+	max-width: 20%;
+	margin-right: 20px;
+}
+.news_grid li article {
+	float: right;
+	width: 75%;
+}
+ // TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE STYLES
+@include respond-to(mobile) {
+
+}

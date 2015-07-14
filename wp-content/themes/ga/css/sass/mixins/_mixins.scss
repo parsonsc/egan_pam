@@ -1,0 +1,55 @@
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
+@import "colour_palette";
+
+@mixin respond-to($media, $min:"", $max:"") {
+  @if $media == mobile {
+    @media only screen and (max-width: 600px) { @content; }
+  }
+   @else if $media == mini_tablet {
+    @media only screen and (max-width: 700px) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: 701px) and (max-width: 800px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 801px) { @content; }
+  }
+  @else if $media == not-mobile {
+    @media only screen and (min-width: 601px) { @content; }
+  }
+  @else if $media == defined {
+
+    @if $min == 0 {
+      @media only screen and (max-width: $max) { @content; }
+    }
+
+    @else if $max == 0 {
+      @media only screen and (min-width: $min) { @content; }
+    }
+
+    @else {
+      @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+    }
+
+  }
+}
+
+
+// vars for fonts used on site
+
+@mixin font_title_copy {
+
+}
+@mixin font_body_copy {
+
+}
+
+@mixin shadow {
+  -webkit-box-shadow: -2px 2px 6px 0px rgba(50, 50, 50, 0.29);
+  -moz-box-shadow:    -2px 2px 6px 0px rgba(50, 50, 50, 0.69);
+  box-shadow:         -2px 2px 6px 0px rgba(50, 50, 50, 0.69);
+}

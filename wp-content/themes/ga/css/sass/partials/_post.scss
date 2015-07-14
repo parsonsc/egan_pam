@@ -1,0 +1,19 @@
+// EGAN PAM STYLESHEET
+// POST.SCSS
+
+article.post {
+	position: relative;
+	margin-left: 240px;
+	width: 100%;
+	max-width: 960px;
+	min-width: 700px;
+}
+ // TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE STYLES
+@include respond-to(mobile) {
+
+}

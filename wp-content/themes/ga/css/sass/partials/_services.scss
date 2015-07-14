@@ -1,0 +1,47 @@
+.service_block {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid $border;
+	border-bottom: 1px solid $border;
+	margin: 20px auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.service_block .staff_contact {
+	float: left;
+	margin-right: 2%;
+}
+.service_block .staff_contact ul,
+.service_block .staff_contact img {
+	display: block;
+	float: left;
+}
+.service_block .staff_contact img {
+	margin-right: 2%;
+}
+.service_block ul li {
+	display: block;
+}
+.service_block a {
+	color: #222e65;
+	text-decoration: none;
+}
+.service_staff {
+	border-top: 1px solid 3;
+ 
+}
+.service_staff .staff {
+	display: block;
+	float: left;
+	margin-right: 4%;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE STYLES
+@include respond-to(mobile) {
+
+}

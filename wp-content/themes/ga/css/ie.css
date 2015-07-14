@@ -1,0 +1,37 @@
+section.module.parallax {
+	height: 350px;
+	background-position: relative;
+	background-size: 100%;
+	background-attachment: scroll;
+}
+.social_share ul.social_buttons {
+	width: 304px;
+}
+figure.hover h3 {
+	visibility: hidden;
+}
+.news_grid {
+	width: 1030px;
+}
+.news_grid .item {
+	vertical-align: top;
+}
+
+/*#DONATE PAGES*/
+
+/*how it works*/
+.hashtag_donate .how_it_works ul li img {
+  border-radius: 50%;
+}
+.hashtag_donate .how_it_works ul li:first-child + li{
+  margin-left: 0;
+}
+.hashtag_donate .how_it_works ul li:first-child + li + li{
+  margin-right: 0;
+}
+
+/*#donate footer*/
+.hashtag_donate footer ul li:first-child + li,
+.hashtag_donate footer ul li:first-child + li + li + li {
+  margin-top: 45px;
+}

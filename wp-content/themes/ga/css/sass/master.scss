@@ -1,0 +1,27 @@
+// EGAN PAM STYLESHEET
+
+// FONTS
+@import "partials/_fonts";
+@import "partials/_font_awesome";
+// MIXINS FILE
+@import "mixins/_mixins";
+@import "mixins/_colour_palette";
+// GENERIC STYLESHEETS
+@import "partials/_normalize";
+
+
+@import "partials/_bones";
+
+@import "partials/_framework";
+
+@import "partials/_header";
+@import "partials/_footer";
+
+@import "partials/_left_nav";
+
+@import "partials/_services";
+@import "partials/_contact";
+
+@import "partials/_post";
+
+@import "partials/_news";
