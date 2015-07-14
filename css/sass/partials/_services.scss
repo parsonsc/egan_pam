@@ -1,0 +1,46 @@
+.services .slideshow {
+	overflow: hidden;
+	height: 350px;
+}
+.services header {
+	padding: 35px 0;
+}
+.services section article {
+	width: 48%;
+	float:left;
+	display: block;
+	margin-right: 4%;
+}
+.services section img {
+	width: 48%;
+	float:left;
+	display: block;
+}
+
+.services section.right article {
+	width: 48%;
+	float: right;
+	display: block;
+	margin-left: 4%;
+	margin-right: 0;
+}
+.services section.right img {
+	width: 48%;
+	float:left;
+	display: block;
+}
+
+
+.services section h2 {
+	font-size: 20px;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+ 
+}
