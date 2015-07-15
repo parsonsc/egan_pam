@@ -1,5 +1,10 @@
-.staff header {
+.site_container .staff header {
 	padding: 35px 0;
+	margin: 0;
+	background: $light_blue_bg;
+	border-bottom: 1px solid #ecf0f1;
+	width: 100%;
+	text-align: left;
 }
 .staff_members ul li {
 	display: block;
@@ -10,22 +15,42 @@
 }
 
 
-.staff_details img {
+.staff_member_details img {
 	width: 49%;
 	display: block;
 	float: left;
 }
-.staff_details article {
+.staff_member_details article {
 	width: 49%;
 	display: block;
 	float: right;
 }
-.staff_details article ul.contact_details {
+.staff_member_details article ul.contact_details {
 	border-top: 1px solid $border;
 }
-.staff_details article ul.contact_details li {
+.staff_member_details article ul.contact_details li {
 	display: block;
 	padding: 10px 0;
+}
+
+.contact_member form .half_width {
+	width: 48%;
+	float: left;
+	margin-right: 2%;
+}
+.contact_member form .form_item label {
+	padding: 5px 0;
+}
+.contact_member form .form_item textarea,
+.contact_member form .form_item button,
+.contact_member form .form_item input {
+	border-radius: 5px;
+}
+.contact_member form .form_item textarea {
+	width: 94%;
+}
+.contact_member form .form_item button {
+	width: 20%;
 }
 // TABLET STYLES
 @include respond-to(tablet) {

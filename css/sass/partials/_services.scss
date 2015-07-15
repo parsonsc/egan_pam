@@ -5,6 +5,9 @@
 .services header {
 	padding: 35px 0;
 }
+.services section {
+	border-bottom: 1px solid $border;
+}
 .services section article {
 	width: 48%;
 	float:left;

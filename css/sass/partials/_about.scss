@@ -1,0 +1,19 @@
+.about header {
+	padding: 35px 0;
+	margin: 0;
+	background: $light_blue_bg;
+	border-bottom: 1px solid #ecf0f1;
+	width: 100%;
+	text-align: left;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+ 
+}

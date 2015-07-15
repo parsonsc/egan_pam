@@ -132,7 +132,33 @@ ul#portfolio img {  display: block; width: 100%;}
 	float: left;
 	display: block;
 }
+.map {
+	width: 50%;
+	float: right;
+}
 
+// MEET THE TEAM
+.staff_members ul li:nth-child(3),
+.staff_members ul li:nth-child(6),
+.staff_members ul li:last-child {
+	margin-right: 0;
+}
+.member_photo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-top: 14px;
+  border-radius: 400px;
+  margin-left: 1px;
+  border: 2px solid #fff;
+}
+.member_info {
+  float: right;
+  width: 65%;
+  text-align: left;
+  padding: 12px 0px 0px 15px;
+  margin-left: 1px;
+}
 // TABLET STYLES
 @include respond-to(tablet) {
 
